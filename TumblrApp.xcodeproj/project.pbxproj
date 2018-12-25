@@ -1,0 +1,1007 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E057B4FF8E4DF7BC262D752 /* Pods_TumblrApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B881E40C01DA557984DD062C /* Pods_TumblrApp.framework */; };
+		D96496C721CD441A0031B136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96496C621CD441A0031B136 /* AppDelegate.swift */; };
+		D96496C921CD441A0031B136 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96496C821CD441A0031B136 /* LoginViewController.swift */; };
+		D96496CC21CD441A0031B136 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96496CA21CD441A0031B136 /* Login.storyboard */; };
+		D96496D121CD44300031B136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96496D021CD44300031B136 /* Assets.xcassets */; };
+		D96496D421CD44300031B136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96496D221CD44300031B136 /* LaunchScreen.storyboard */; };
+		D96496DE21CD46B90031B136 /* OAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96496DD21CD46B90031B136 /* OAuthService.swift */; };
+		FA1ABA1021D11BD6006B0CBA /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1ABA0F21D11BD6006B0CBA /* ProfilePresenter.swift */; };
+		FA1ABA1321D11C29006B0CBA /* ProfileNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1ABA1221D11C29006B0CBA /* ProfileNetworkService.swift */; };
+		FA1ABA1621D12012006B0CBA /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1ABA1421D12012006B0CBA /* User+CoreDataProperties.swift */; };
+		FA1ABA1721D12012006B0CBA /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1ABA1521D12012006B0CBA /* User+CoreDataClass.swift */; };
+		FA1ABA1A21D1210D006B0CBA /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1ABA1921D1210D006B0CBA /* UserInfo.swift */; };
+		FA1ABA1B21D1235E006B0CBA /* TumblrApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D96496CD21CD441A0031B136 /* TumblrApp.xcdatamodeld */; };
+		FA1ABA1F21D12BCE006B0CBA /* SavedPosts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1ABA1E21D12BCE006B0CBA /* SavedPosts.storyboard */; };
+		FA1ABA2321D12BFA006B0CBA /* SavedPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1ABA2221D12BFA006B0CBA /* SavedPostsViewController.swift */; };
+		FA1ABA2621D12C18006B0CBA /* SavedPostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1ABA2521D12C18006B0CBA /* SavedPostsPresenter.swift */; };
+		FA1ABA2921D28BBA006B0CBA /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1ABA2821D28BBA006B0CBA /* LeftAlignedCollectionViewFlowLayout.swift */; };
+		FA213A6821CFE1D600592625 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213A6721CFE1D600592625 /* CoreDataService.swift */; };
+		FA213A9221CFF11C00592625 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213A8E21CFF11B00592625 /* Post+CoreDataClass.swift */; };
+		FA213A9321CFF11C00592625 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213A8F21CFF11C00592625 /* Post+CoreDataProperties.swift */; };
+		FA213A9421CFF11C00592625 /* Blog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213A9021CFF11C00592625 /* Blog+CoreDataProperties.swift */; };
+		FA213A9521CFF11C00592625 /* Blog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213A9121CFF11C00592625 /* Blog+CoreDataClass.swift */; };
+		FA213A9721CFFBA300592625 /* CodingUserInfoKeyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213A9621CFFBA300592625 /* CodingUserInfoKeyExtension.swift */; };
+		FA213A9921D000F100592625 /* NetworkRechabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213A9821D000F100592625 /* NetworkRechabilityService.swift */; };
+		FA213A9C21D01E2C00592625 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213A9B21D01E2C00592625 /* StringExtension.swift */; };
+		FA213A9F21D0CFD200592625 /* PostDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA213A9E21D0CFD200592625 /* PostDetail.storyboard */; };
+		FA213AA121D0EE2100592625 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213AA021D0EE2100592625 /* PostDetailViewController.swift */; };
+		FA213AA421D0F1D300592625 /* PostDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213AA321D0F1D300592625 /* PostDetailsPresenter.swift */; };
+		FA213AA721D0F67700592625 /* TagCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213AA621D0F67700592625 /* TagCollectionViewModel.swift */; };
+		FA213AAB21D0F79F00592625 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA213AA921D0F79F00592625 /* TagCollectionViewCell.swift */; };
+		FA213AAC21D0F79F00592625 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA213AAA21D0F79F00592625 /* TagCollectionViewCell.xib */; };
+		FAA8042E21CD79990009FFC3 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8042D21CD79990009FFC3 /* UserDefaultsExtension.swift */; };
+		FAA8043021CD7B590009FFC3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8042F21CD7B590009FFC3 /* UIViewExtension.swift */; };
+		FAA8043821CE7BDE0009FFC3 /* ProgressHUDProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8043321CE7BDD0009FFC3 /* ProgressHUDProtocol.swift */; };
+		FAA8043921CE7BDE0009FFC3 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8043421CE7BDD0009FFC3 /* NibLoadableView.swift */; };
+		FAA8043A21CE7BDE0009FFC3 /* AlertDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8043521CE7BDD0009FFC3 /* AlertDisplayable.swift */; };
+		FAA8043B21CE7BDE0009FFC3 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8043621CE7BDD0009FFC3 /* StoryboardIdentifiable.swift */; };
+		FAA8043C21CE7BDE0009FFC3 /* TableViewGenerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8043721CE7BDE0009FFC3 /* TableViewGenerable.swift */; };
+		FAA8044321CE7C100009FFC3 /* EndPointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8043F21CE7C0F0009FFC3 /* EndPointProtocol.swift */; };
+		FAA8044421CE7C100009FFC3 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8044021CE7C0F0009FFC3 /* APIRequestProtocol.swift */; };
+		FAA8044521CE7C100009FFC3 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8044121CE7C100009FFC3 /* APIClientProtocol.swift */; };
+		FAA8044821CE7C260009FFC3 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8044721CE7C250009FFC3 /* RequestGenerator.swift */; };
+		FAA8044A21CE7C450009FFC3 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8044921CE7C450009FFC3 /* UIImageViewExtension.swift */; };
+		FAA8044C21CE7C560009FFC3 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8044B21CE7C560009FFC3 /* StoryboardExtension.swift */; };
+		FAA8044E21CE7C600009FFC3 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8044D21CE7C600009FFC3 /* TableViewExtension.swift */; };
+		FAA8045021CE7C690009FFC3 /* CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8044F21CE7C690009FFC3 /* CollectionViewExtension.swift */; };
+		FAA8045221CE7C730009FFC3 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8045121CE7C730009FFC3 /* ViewControllerExtension.swift */; };
+		FAA8045921CE94870009FFC3 /* TableViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8045821CE94870009FFC3 /* TableViewGenerator.swift */; };
+		FAA8045E21CE98660009FFC3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8045D21CE98660009FFC3 /* LoginPresenter.swift */; };
+		FAA8046121CE9CF90009FFC3 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA8046021CE9CF90009FFC3 /* Menu.storyboard */; };
+		FAA8046421CE9D330009FFC3 /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8046221CE9D320009FFC3 /* LeftSideMenuViewController.swift */; };
+		FAA8046521CE9D330009FFC3 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8046321CE9D330009FFC3 /* ContainerViewController.swift */; };
+		FAA8046821CE9E3B0009FFC3 /* ViewAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8046721CE9E3B0009FFC3 /* ViewAnimatable.swift */; };
+		FAA8046C21CF74680009FFC3 /* LeftMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA8046A21CF74680009FFC3 /* LeftMenuTableViewCell.xib */; };
+		FAA8046D21CF74680009FFC3 /* LeftMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8046B21CF74680009FFC3 /* LeftMenuTableViewCell.swift */; };
+		FAA8047021CF75020009FFC3 /* LeftMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8046F21CF75020009FFC3 /* LeftMenuModel.swift */; };
+		FAA8047321CF75CA0009FFC3 /* LeftMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8047221CF75CA0009FFC3 /* LeftMenuPresenter.swift */; };
+		FAA8047E21CF88190009FFC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8047D21CF88190009FFC3 /* ProfileViewController.swift */; };
+		FAA8048021CF88250009FFC3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA8047F21CF88250009FFC3 /* Profile.storyboard */; };
+		FAA8048821CF98EA0009FFC3 /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8048721CF98EA0009FFC3 /* PostsPresenter.swift */; };
+		FAA8048B21CF99190009FFC3 /* PostNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8048A21CF99190009FFC3 /* PostNetworkService.swift */; };
+		FAA8048D21CF99B40009FFC3 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8048C21CF99B40009FFC3 /* PostResponse.swift */; };
+		FAA8049121CFAAFE0009FFC3 /* ApiParametersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8049021CFAAFE0009FFC3 /* ApiParametersProtocol.swift */; };
+		FAA8049821CFCACF0009FFC3 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA8049621CFCACF0009FFC3 /* PostTableViewCell.xib */; };
+		FAA8049921CFCACF0009FFC3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8049721CFCACF0009FFC3 /* PostTableViewCell.swift */; };
+		FAA8049C21CFD7130009FFC3 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8049B21CFD7130009FFC3 /* DateFormatterExtension.swift */; };
+		FAA8049E21CFD94E0009FFC3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8049D21CFD94D0009FFC3 /* DateExtension.swift */; };
+		FAA804A021CFDA850009FFC3 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8049F21CFDA840009FFC3 /* PostsViewController.swift */; };
+		FAA804A221CFDDAB0009FFC3 /* FetchPostsParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA804A121CFDDAB0009FFC3 /* FetchPostsParameters.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C166D67B21C0935D9E9192A /* Pods-TumblrApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrApp/Pods-TumblrApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A6C5E25814D28DCEE50F5FE4 /* Pods-TumblrApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrApp.release.xcconfig"; path = "Target Support Files/Pods-TumblrApp/Pods-TumblrApp.release.xcconfig"; sourceTree = "<group>"; };
+		B5CEE955191C8531F5374D4E /* Pods-TumblrApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrApp.debug.xcconfig"; path = "Target Support Files/Pods-TumblrApp/Pods-TumblrApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B881E40C01DA557984DD062C /* Pods_TumblrApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TumblrApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96496C321CD441A0031B136 /* TumblrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96496C621CD441A0031B136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D96496C821CD441A0031B136 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D96496CB21CD441A0031B136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		D96496CE21CD441A0031B136 /* TumblrApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TumblrApp.xcdatamodel; sourceTree = "<group>"; };
+		D96496D021CD44300031B136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D96496D321CD44300031B136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D96496D521CD44300031B136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96496DD21CD46B90031B136 /* OAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthService.swift; sourceTree = "<group>"; };
+		DBB3ECB93181B675E6F36D8D /* Pods-TumblrApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrApp/Pods-TumblrApp.release.xcconfig"; sourceTree = "<group>"; };
+		FA1ABA0F21D11BD6006B0CBA /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		FA1ABA1221D11C29006B0CBA /* ProfileNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNetworkService.swift; sourceTree = "<group>"; };
+		FA1ABA1421D12012006B0CBA /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA1ABA1521D12012006B0CBA /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA1ABA1921D1210D006B0CBA /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		FA1ABA1E21D12BCE006B0CBA /* SavedPosts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedPosts.storyboard; sourceTree = "<group>"; };
+		FA1ABA2221D12BFA006B0CBA /* SavedPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostsViewController.swift; sourceTree = "<group>"; };
+		FA1ABA2521D12C18006B0CBA /* SavedPostsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostsPresenter.swift; sourceTree = "<group>"; };
+		FA1ABA2821D28BBA006B0CBA /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		FA213A6721CFE1D600592625 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		FA213A8E21CFF11B00592625 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA213A8F21CFF11C00592625 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA213A9021CFF11C00592625 /* Blog+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Blog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA213A9121CFF11C00592625 /* Blog+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Blog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA213A9621CFFBA300592625 /* CodingUserInfoKeyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingUserInfoKeyExtension.swift; sourceTree = "<group>"; };
+		FA213A9821D000F100592625 /* NetworkRechabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRechabilityService.swift; sourceTree = "<group>"; };
+		FA213A9B21D01E2C00592625 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		FA213A9E21D0CFD200592625 /* PostDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostDetail.storyboard; sourceTree = "<group>"; };
+		FA213AA021D0EE2100592625 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		FA213AA321D0F1D300592625 /* PostDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsPresenter.swift; sourceTree = "<group>"; };
+		FA213AA621D0F67700592625 /* TagCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewModel.swift; sourceTree = "<group>"; };
+		FA213AA921D0F79F00592625 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA213AAA21D0F79F00592625 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		FAA8042D21CD79990009FFC3 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		FAA8042F21CD7B590009FFC3 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FAA8043321CE7BDD0009FFC3 /* ProgressHUDProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUDProtocol.swift; sourceTree = "<group>"; };
+		FAA8043421CE7BDD0009FFC3 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		FAA8043521CE7BDD0009FFC3 /* AlertDisplayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDisplayable.swift; sourceTree = "<group>"; };
+		FAA8043621CE7BDD0009FFC3 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		FAA8043721CE7BDE0009FFC3 /* TableViewGenerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewGenerable.swift; sourceTree = "<group>"; };
+		FAA8043F21CE7C0F0009FFC3 /* EndPointProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointProtocol.swift; sourceTree = "<group>"; };
+		FAA8044021CE7C0F0009FFC3 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
+		FAA8044121CE7C100009FFC3 /* APIClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		FAA8044721CE7C250009FFC3 /* RequestGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
+		FAA8044921CE7C450009FFC3 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		FAA8044B21CE7C560009FFC3 /* StoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		FAA8044D21CE7C600009FFC3 /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		FAA8044F21CE7C690009FFC3 /* CollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewExtension.swift; sourceTree = "<group>"; };
+		FAA8045121CE7C730009FFC3 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		FAA8045321CE7E920009FFC3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA8045821CE94870009FFC3 /* TableViewGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewGenerator.swift; sourceTree = "<group>"; };
+		FAA8045D21CE98660009FFC3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		FAA8046021CE9CF90009FFC3 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		FAA8046221CE9D320009FFC3 /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
+		FAA8046321CE9D330009FFC3 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		FAA8046721CE9E3B0009FFC3 /* ViewAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimatable.swift; sourceTree = "<group>"; };
+		FAA8046A21CF74680009FFC3 /* LeftMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuTableViewCell.xib; sourceTree = "<group>"; };
+		FAA8046B21CF74680009FFC3 /* LeftMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewCell.swift; sourceTree = "<group>"; };
+		FAA8046F21CF75020009FFC3 /* LeftMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuModel.swift; sourceTree = "<group>"; };
+		FAA8047221CF75CA0009FFC3 /* LeftMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuPresenter.swift; sourceTree = "<group>"; };
+		FAA8047D21CF88190009FFC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FAA8047F21CF88250009FFC3 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		FAA8048721CF98EA0009FFC3 /* PostsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
+		FAA8048A21CF99190009FFC3 /* PostNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetworkService.swift; sourceTree = "<group>"; };
+		FAA8048C21CF99B40009FFC3 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		FAA8049021CFAAFE0009FFC3 /* ApiParametersProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiParametersProtocol.swift; sourceTree = "<group>"; };
+		FAA8049621CFCACF0009FFC3 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		FAA8049721CFCACF0009FFC3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FAA8049B21CFD7130009FFC3 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		FAA8049D21CFD94D0009FFC3 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		FAA8049F21CFDA840009FFC3 /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		FAA804A121CFDDAB0009FFC3 /* FetchPostsParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsParameters.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D96496C021CD441A0031B136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E057B4FF8E4DF7BC262D752 /* Pods_TumblrApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F93DBEBD7406B0FFF1F6516 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5CEE955191C8531F5374D4E /* Pods-TumblrApp.debug.xcconfig */,
+				A6C5E25814D28DCEE50F5FE4 /* Pods-TumblrApp.release.xcconfig */,
+				0C166D67B21C0935D9E9192A /* Pods-TumblrApp.debug.xcconfig */,
+				DBB3ECB93181B675E6F36D8D /* Pods-TumblrApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7C4942E1F02B348E21DECA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8045321CE7E920009FFC3 /* Alamofire.framework */,
+				B881E40C01DA557984DD062C /* Pods_TumblrApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96496BA21CD441A0031B136 = {
+			isa = PBXGroup;
+			children = (
+				D96496C521CD441A0031B136 /* TumblrApp */,
+				D96496C421CD441A0031B136 /* Products */,
+				0F93DBEBD7406B0FFF1F6516 /* Pods */,
+				A7C4942E1F02B348E21DECA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D96496C421CD441A0031B136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D96496C321CD441A0031B136 /* TumblrApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D96496C521CD441A0031B136 /* TumblrApp */ = {
+			isa = PBXGroup;
+			children = (
+				FA213A6621CFE1BE00592625 /* DataBase */,
+				FAA8043221CE7BAD0009FFC3 /* Protocols */,
+				D96496DC21CD469E0031B136 /* Services */,
+				FAA8042A21CD782E0009FFC3 /* Extensions */,
+				FAA8043D21CE7BE90009FFC3 /* APIClient */,
+				FA1ABA2721D28B98006B0CBA /* Views */,
+				FAA8043121CE7B910009FFC3 /* Presentation */,
+				D96496DB21CD468F0031B136 /* SupportingFiles */,
+			);
+			path = TumblrApp;
+			sourceTree = "<group>";
+		};
+		D96496DB21CD468F0031B136 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D96496C621CD441A0031B136 /* AppDelegate.swift */,
+				D96496D021CD44300031B136 /* Assets.xcassets */,
+				D96496D221CD44300031B136 /* LaunchScreen.storyboard */,
+				D96496D521CD44300031B136 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D96496DC21CD469E0031B136 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8045821CE94870009FFC3 /* TableViewGenerator.swift */,
+				FA213A9821D000F100592625 /* NetworkRechabilityService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA1ABA0D21D11BB1006B0CBA /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABA0F21D11BD6006B0CBA /* ProfilePresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FA1ABA0E21D11BBD006B0CBA /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABA1221D11C29006B0CBA /* ProfileNetworkService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		FA1ABA1821D120FC006B0CBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABA1921D1210D006B0CBA /* UserInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA1ABA1D21D12BA6006B0CBA /* SavedPosts */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABA2121D12BDD006B0CBA /* Presenters */,
+				FA1ABA2021D12BD6006B0CBA /* Controllers */,
+				FA1ABA1E21D12BCE006B0CBA /* SavedPosts.storyboard */,
+			);
+			path = SavedPosts;
+			sourceTree = "<group>";
+		};
+		FA1ABA2021D12BD6006B0CBA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABA2221D12BFA006B0CBA /* SavedPostsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA1ABA2121D12BDD006B0CBA /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABA2521D12C18006B0CBA /* SavedPostsPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FA1ABA2721D28B98006B0CBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABA2821D28BBA006B0CBA /* LeftAlignedCollectionViewFlowLayout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA213A6621CFE1BE00592625 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				D96496CD21CD441A0031B136 /* TumblrApp.xcdatamodeld */,
+				FA213A6C21CFEE1B00592625 /* Models */,
+				FA213A6721CFE1D600592625 /* CoreDataService.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		FA213A6C21CFEE1B00592625 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABA1521D12012006B0CBA /* User+CoreDataClass.swift */,
+				FA1ABA1421D12012006B0CBA /* User+CoreDataProperties.swift */,
+				FA213A8E21CFF11B00592625 /* Post+CoreDataClass.swift */,
+				FA213A8F21CFF11C00592625 /* Post+CoreDataProperties.swift */,
+				FA213A9121CFF11C00592625 /* Blog+CoreDataClass.swift */,
+				FA213A9021CFF11C00592625 /* Blog+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA213A9D21D0CFAF00592625 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA213AA021D0EE2100592625 /* PostDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA213AA221D0F18600592625 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FA213AA321D0F1D300592625 /* PostDetailsPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FA213AA521D0F64300592625 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA213AA621D0F67700592625 /* TagCollectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA213AA821D0F73F00592625 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA213AA921D0F79F00592625 /* TagCollectionViewCell.swift */,
+				FA213AAA21D0F79F00592625 /* TagCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAA8042A21CD782E0009FFC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8042B21CD79740009FFC3 /* UI */,
+				FAA8042C21CD797A0009FFC3 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAA8042B21CD79740009FFC3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8045121CE7C730009FFC3 /* ViewControllerExtension.swift */,
+				FAA8044F21CE7C690009FFC3 /* CollectionViewExtension.swift */,
+				FAA8044D21CE7C600009FFC3 /* TableViewExtension.swift */,
+				FAA8044B21CE7C560009FFC3 /* StoryboardExtension.swift */,
+				FAA8042F21CD7B590009FFC3 /* UIViewExtension.swift */,
+				FAA8044921CE7C450009FFC3 /* UIImageViewExtension.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FAA8042C21CD797A0009FFC3 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8049B21CFD7130009FFC3 /* DateFormatterExtension.swift */,
+				FAA8049D21CFD94D0009FFC3 /* DateExtension.swift */,
+				FAA8042D21CD79990009FFC3 /* UserDefaultsExtension.swift */,
+				FA213A9621CFFBA300592625 /* CodingUserInfoKeyExtension.swift */,
+				FA213A9B21D01E2C00592625 /* StringExtension.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FAA8043121CE7B910009FFC3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8045A21CE98280009FFC3 /* Login */,
+				FAA8045F21CE9BFB0009FFC3 /* Menu */,
+				FAA8047421CF876B0009FFC3 /* Posts */,
+				FAA8049521CFC94F0009FFC3 /* PostDetails */,
+				FAA8047521CF87740009FFC3 /* Profile */,
+				FA1ABA1D21D12BA6006B0CBA /* SavedPosts */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FAA8043221CE7BAD0009FFC3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8043521CE7BDD0009FFC3 /* AlertDisplayable.swift */,
+				FAA8043421CE7BDD0009FFC3 /* NibLoadableView.swift */,
+				FAA8043321CE7BDD0009FFC3 /* ProgressHUDProtocol.swift */,
+				FAA8043621CE7BDD0009FFC3 /* StoryboardIdentifiable.swift */,
+				FAA8043721CE7BDE0009FFC3 /* TableViewGenerable.swift */,
+				FAA8046721CE9E3B0009FFC3 /* ViewAnimatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FAA8043D21CE7BE90009FFC3 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				D96496DD21CD46B90031B136 /* OAuthService.swift */,
+				FAA8044721CE7C250009FFC3 /* RequestGenerator.swift */,
+				FAA8043E21CE7BFC0009FFC3 /* Protocols */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		FAA8043E21CE7BFC0009FFC3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8049021CFAAFE0009FFC3 /* ApiParametersProtocol.swift */,
+				FAA8044121CE7C100009FFC3 /* APIClientProtocol.swift */,
+				FAA8044021CE7C0F0009FFC3 /* APIRequestProtocol.swift */,
+				FAA8043F21CE7C0F0009FFC3 /* EndPointProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FAA8045A21CE98280009FFC3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8045C21CE984B0009FFC3 /* Presenters */,
+				FAA8045B21CE98320009FFC3 /* Controllers */,
+				D96496CA21CD441A0031B136 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FAA8045B21CE98320009FFC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D96496C821CD441A0031B136 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAA8045C21CE984B0009FFC3 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8045D21CE98660009FFC3 /* LoginPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FAA8045F21CE9BFB0009FFC3 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8046E21CF74DA0009FFC3 /* Models */,
+				FAA8046921CF73F50009FFC3 /* Cells */,
+				FAA8047121CF75B40009FFC3 /* Presenters */,
+				FAA8046621CE9DFF0009FFC3 /* Controllers */,
+				FAA8046021CE9CF90009FFC3 /* Menu.storyboard */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FAA8046621CE9DFF0009FFC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8046321CE9D330009FFC3 /* ContainerViewController.swift */,
+				FAA8046221CE9D320009FFC3 /* LeftSideMenuViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAA8046921CF73F50009FFC3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8046B21CF74680009FFC3 /* LeftMenuTableViewCell.swift */,
+				FAA8046A21CF74680009FFC3 /* LeftMenuTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAA8046E21CF74DA0009FFC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8046F21CF75020009FFC3 /* LeftMenuModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAA8047121CF75B40009FFC3 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8047221CF75CA0009FFC3 /* LeftMenuPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FAA8047421CF876B0009FFC3 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8048921CF99010009FFC3 /* NetworkServices */,
+				FAA8047921CF879E0009FFC3 /* Presenters */,
+				FAA8047821CF87980009FFC3 /* Models */,
+				FAA8047721CF87930009FFC3 /* Cells */,
+				FAA8047621CF878A0009FFC3 /* Controllers */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		FAA8047521CF87740009FFC3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ABA1821D120FC006B0CBA /* Models */,
+				FA1ABA0E21D11BBD006B0CBA /* NetworkServices */,
+				FA1ABA0D21D11BB1006B0CBA /* Presenters */,
+				FAA8047C21CF88020009FFC3 /* Controllers */,
+				FAA8047F21CF88250009FFC3 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FAA8047621CF878A0009FFC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8049F21CFDA840009FFC3 /* PostsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAA8047721CF87930009FFC3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8049721CFCACF0009FFC3 /* PostTableViewCell.swift */,
+				FAA8049621CFCACF0009FFC3 /* PostTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAA8047821CF87980009FFC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8048C21CF99B40009FFC3 /* PostResponse.swift */,
+				FAA804A121CFDDAB0009FFC3 /* FetchPostsParameters.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAA8047921CF879E0009FFC3 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8048721CF98EA0009FFC3 /* PostsPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FAA8047C21CF88020009FFC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8047D21CF88190009FFC3 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAA8048921CF99010009FFC3 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8048A21CF99190009FFC3 /* PostNetworkService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		FAA8049521CFC94F0009FFC3 /* PostDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FA213AA821D0F73F00592625 /* Cells */,
+				FA213AA521D0F64300592625 /* ViewModels */,
+				FA213AA221D0F18600592625 /* Presenters */,
+				FA213A9D21D0CFAF00592625 /* Controllers */,
+				FA213A9E21D0CFD200592625 /* PostDetail.storyboard */,
+			);
+			path = PostDetails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D96496C221CD441A0031B136 /* TumblrApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96496D821CD44300031B136 /* Build configuration list for PBXNativeTarget "TumblrApp" */;
+			buildPhases = (
+				5E8ECBFD87AA6E1887B4EFC9 /* [CP] Check Pods Manifest.lock */,
+				D96496BF21CD441A0031B136 /* Sources */,
+				D96496C021CD441A0031B136 /* Frameworks */,
+				D96496C121CD441A0031B136 /* Resources */,
+				02D1FD3D2FEB82699B5B9EEA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TumblrApp;
+			productName = TumblrApp;
+			productReference = D96496C321CD441A0031B136 /* TumblrApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D96496BB21CD441A0031B136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Sasha;
+				TargetAttributes = {
+					D96496C221CD441A0031B136 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D96496BE21CD441A0031B136 /* Build configuration list for PBXProject "TumblrApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D96496BA21CD441A0031B136;
+			productRefGroup = D96496C421CD441A0031B136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D96496C221CD441A0031B136 /* TumblrApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D96496C121CD441A0031B136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA8048021CF88250009FFC3 /* Profile.storyboard in Resources */,
+				D96496D421CD44300031B136 /* LaunchScreen.storyboard in Resources */,
+				D96496D121CD44300031B136 /* Assets.xcassets in Resources */,
+				FAA8046C21CF74680009FFC3 /* LeftMenuTableViewCell.xib in Resources */,
+				D96496CC21CD441A0031B136 /* Login.storyboard in Resources */,
+				FA213A9F21D0CFD200592625 /* PostDetail.storyboard in Resources */,
+				FA1ABA1F21D12BCE006B0CBA /* SavedPosts.storyboard in Resources */,
+				FA213AAC21D0F79F00592625 /* TagCollectionViewCell.xib in Resources */,
+				FAA8046121CE9CF90009FFC3 /* Menu.storyboard in Resources */,
+				FAA8049821CFCACF0009FFC3 /* PostTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02D1FD3D2FEB82699B5B9EEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TumblrApp/Pods-TumblrApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TumblrApp/Pods-TumblrApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8ECBFD87AA6E1887B4EFC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TumblrApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D96496BF21CD441A0031B136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA8043921CE7BDE0009FFC3 /* NibLoadableView.swift in Sources */,
+				FA213A6821CFE1D600592625 /* CoreDataService.swift in Sources */,
+				FAA8044821CE7C260009FFC3 /* RequestGenerator.swift in Sources */,
+				FAA8049C21CFD7130009FFC3 /* DateFormatterExtension.swift in Sources */,
+				FA213A9721CFFBA300592625 /* CodingUserInfoKeyExtension.swift in Sources */,
+				FA213A9321CFF11C00592625 /* Post+CoreDataProperties.swift in Sources */,
+				FAA8045E21CE98660009FFC3 /* LoginPresenter.swift in Sources */,
+				FAA8045221CE7C730009FFC3 /* ViewControllerExtension.swift in Sources */,
+				FA213A9921D000F100592625 /* NetworkRechabilityService.swift in Sources */,
+				FA213AA421D0F1D300592625 /* PostDetailsPresenter.swift in Sources */,
+				FAA8049121CFAAFE0009FFC3 /* ApiParametersProtocol.swift in Sources */,
+				FAA8043021CD7B590009FFC3 /* UIViewExtension.swift in Sources */,
+				FAA8044421CE7C100009FFC3 /* APIRequestProtocol.swift in Sources */,
+				FAA8044C21CE7C560009FFC3 /* StoryboardExtension.swift in Sources */,
+				FAA8047021CF75020009FFC3 /* LeftMenuModel.swift in Sources */,
+				FAA8047321CF75CA0009FFC3 /* LeftMenuPresenter.swift in Sources */,
+				FAA8042E21CD79990009FFC3 /* UserDefaultsExtension.swift in Sources */,
+				FAA8048B21CF99190009FFC3 /* PostNetworkService.swift in Sources */,
+				FAA8043821CE7BDE0009FFC3 /* ProgressHUDProtocol.swift in Sources */,
+				FAA8044521CE7C100009FFC3 /* APIClientProtocol.swift in Sources */,
+				FAA8049921CFCACF0009FFC3 /* PostTableViewCell.swift in Sources */,
+				FAA8047E21CF88190009FFC3 /* ProfileViewController.swift in Sources */,
+				FAA8046821CE9E3B0009FFC3 /* ViewAnimatable.swift in Sources */,
+				FAA8045921CE94870009FFC3 /* TableViewGenerator.swift in Sources */,
+				FA213AA721D0F67700592625 /* TagCollectionViewModel.swift in Sources */,
+				FAA8045021CE7C690009FFC3 /* CollectionViewExtension.swift in Sources */,
+				FA1ABA1321D11C29006B0CBA /* ProfileNetworkService.swift in Sources */,
+				FA1ABA2621D12C18006B0CBA /* SavedPostsPresenter.swift in Sources */,
+				FAA8043B21CE7BDE0009FFC3 /* StoryboardIdentifiable.swift in Sources */,
+				FA213AAB21D0F79F00592625 /* TagCollectionViewCell.swift in Sources */,
+				FAA8048821CF98EA0009FFC3 /* PostsPresenter.swift in Sources */,
+				FAA8048D21CF99B40009FFC3 /* PostResponse.swift in Sources */,
+				FAA8046521CE9D330009FFC3 /* ContainerViewController.swift in Sources */,
+				FA1ABA1B21D1235E006B0CBA /* TumblrApp.xcdatamodeld in Sources */,
+				FA1ABA1721D12012006B0CBA /* User+CoreDataClass.swift in Sources */,
+				FA213AA121D0EE2100592625 /* PostDetailViewController.swift in Sources */,
+				FAA8043A21CE7BDE0009FFC3 /* AlertDisplayable.swift in Sources */,
+				FA1ABA2321D12BFA006B0CBA /* SavedPostsViewController.swift in Sources */,
+				FAA8046D21CF74680009FFC3 /* LeftMenuTableViewCell.swift in Sources */,
+				D96496C921CD441A0031B136 /* LoginViewController.swift in Sources */,
+				FA1ABA2921D28BBA006B0CBA /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
+				D96496C721CD441A0031B136 /* AppDelegate.swift in Sources */,
+				FAA804A221CFDDAB0009FFC3 /* FetchPostsParameters.swift in Sources */,
+				FAA8044321CE7C100009FFC3 /* EndPointProtocol.swift in Sources */,
+				FAA8044E21CE7C600009FFC3 /* TableViewExtension.swift in Sources */,
+				FA213A9421CFF11C00592625 /* Blog+CoreDataProperties.swift in Sources */,
+				FAA8044A21CE7C450009FFC3 /* UIImageViewExtension.swift in Sources */,
+				FAA804A021CFDA850009FFC3 /* PostsViewController.swift in Sources */,
+				D96496DE21CD46B90031B136 /* OAuthService.swift in Sources */,
+				FA1ABA1021D11BD6006B0CBA /* ProfilePresenter.swift in Sources */,
+				FAA8046421CE9D330009FFC3 /* LeftSideMenuViewController.swift in Sources */,
+				FA1ABA1621D12012006B0CBA /* User+CoreDataProperties.swift in Sources */,
+				FA213A9221CFF11C00592625 /* Post+CoreDataClass.swift in Sources */,
+				FAA8049E21CFD94E0009FFC3 /* DateExtension.swift in Sources */,
+				FAA8043C21CE7BDE0009FFC3 /* TableViewGenerable.swift in Sources */,
+				FA213A9C21D01E2C00592625 /* StringExtension.swift in Sources */,
+				FA1ABA1A21D1210D006B0CBA /* UserInfo.swift in Sources */,
+				FA213A9521CFF11C00592625 /* Blog+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D96496CA21CD441A0031B136 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96496CB21CD441A0031B136 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		D96496D221CD44300031B136 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96496D321CD44300031B136 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D96496D621CD44300031B136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		D96496D721CD44300031B136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D96496D921CD44300031B136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5CEE955191C8531F5374D4E /* Pods-TumblrApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94P3Z2H78M;
+				INFOPLIST_FILE = "$(SRCROOT)/TumblrApp/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.tumbrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D96496DA21CD44300031B136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C5E25814D28DCEE50F5FE4 /* Pods-TumblrApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94P3Z2H78M;
+				INFOPLIST_FILE = "$(SRCROOT)/TumblrApp/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.tumbrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D96496BE21CD441A0031B136 /* Build configuration list for PBXProject "TumblrApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96496D621CD44300031B136 /* Debug */,
+				D96496D721CD44300031B136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D96496D821CD44300031B136 /* Build configuration list for PBXNativeTarget "TumblrApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96496D921CD44300031B136 /* Debug */,
+				D96496DA21CD44300031B136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D96496CD21CD441A0031B136 /* TumblrApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D96496CE21CD441A0031B136 /* TumblrApp.xcdatamodel */,
+			);
+			currentVersion = D96496CE21CD441A0031B136 /* TumblrApp.xcdatamodel */;
+			path = TumblrApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D96496BB21CD441A0031B136 /* Project object */;
+}
